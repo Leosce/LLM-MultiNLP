@@ -8,6 +8,7 @@ import transformers
 from transformers import T5Tokenizer, T5ForConditionalGeneration, pipeline
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize
 tokenizer = T5Tokenizer.from_pretrained("t5-base")
 model = T5ForConditionalGeneration.from_pretrained("t5-base")
@@ -65,7 +66,7 @@ def read(text, lookup):
 
 
 def generate(prompt):    
-    outputs = generator(prompt, max_length=100)
+    outputs = generator(prompt, max_length=50)
     return outputs[0]['generated_text']
 
 

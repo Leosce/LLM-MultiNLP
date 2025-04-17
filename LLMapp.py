@@ -10,7 +10,7 @@ options = ['Classify', 'Summarize', 'Tag', 'Q&A', 'Generate', 'Translate', 'Unma
 option = st.selectbox("Choose an option:", options)
 
 if option == 'Generate':
-    st.write('Please note that the maximum allowed input for the generator is 100 tokens.')
+    st.write('Please note that the maximum allowed input for the generator is 50 tokens.')
 
 st.header("Please enter the text below.")
 

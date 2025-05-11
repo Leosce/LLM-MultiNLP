@@ -1,10 +1,8 @@
-Certainly! Based on the contents of the [Leosce/LLM-practice](https://github.com/Leosce/LLM-practice) repository, here's a comprehensive `README.md` you can use to enhance your GitHub project:
-
----
-
 # 🧠 LLM MultiNLP
 
 A multi-functional NLP application built with Streamlit and Hugging Face Transformers, offering real-time interaction with various large language model (LLM) tasks.([GitHub][1])
+You can access the Streamlit
+👉 [Launch the Streamlit App](https://llm-multinlp.streamlit.app/)
 
 ## 🚀 Features
 
@@ -72,10 +70,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 * [Hugging Face](https://huggingface.co/) for providing accessible NLP models.
 * [Streamlit](https://streamlit.io/) for simplifying the creation of web applications.([GitHub][1])
-
----
-
-Feel free to customize this `README.md` further to align with any additional features or updates you incorporate into the project.
-
-[1]: https://github.com/Leosce/LLM-practice/blob/main/LLMapp.py?utm_source=chatgpt.com "LLM-practice/LLMapp.py at main · Leosce/LLM-practice - GitHub"
-[2]: https://github.com/Leosce/LLM-practice/blob/main/requirements.txt?utm_source=chatgpt.com "LLM-practice/requirements.txt at main · Leosce/LLM-practice - GitHub"

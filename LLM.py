@@ -19,7 +19,7 @@ model = T5ForConditionalGeneration.from_pretrained("t5-small")
 
 # In[2]:
 
-classifier = pipeline("text-classification", model="prajjwal1/bert-tiny")
+classifier = pipeline("text-classification", model="squeezebert/squeezebert-uncased")
 summarizer = pipeline("summarization", model="t5-small")
 ner_tagger = pipeline("ner", model="dslim/bert-base-NER", aggregation_strategy="simple")
 reader = pipeline("question-answering", model="mrm8488/bert-tiny-5-finetuned-squadv2")

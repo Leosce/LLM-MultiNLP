@@ -12,8 +12,8 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize
-tokenizer = T5Tokenizer.from_pretrained("t5-small", legacy=False)
-model = T5ForConditionalGeneration.from_pretrained("t5-base")
+tokenizer = T5Tokenizer.from_pretrained("t5-small")
+model = T5ForConditionalGeneration.from_pretrained("t5-small")
 
 
 # In[2]:

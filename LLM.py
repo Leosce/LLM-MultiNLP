@@ -19,14 +19,12 @@ model = T5ForConditionalGeneration.from_pretrained("t5-small")
 
 # In[2]:
 
-
-classifier = pipeline("text-classification" , model = 'distilbert-base-uncased-finetuned-sst-2-english' )
-summarizer = pipeline("summarization"  , model  = "sshleifer/distilbart-cnn-12-6")
-ner_tagger = pipeline("ner",model = "dbmdz/bert-large-cased-finetuned-conll03-english" ,aggregation_strategy="simple" )
-reader = pipeline("question-answering" ,  model = "distilbert-base-cased-distilled-squad" )
-generator = pipeline('text-generation', model='gpt2-medium')
-unmasker = pipeline("fill-mask", model="bert-base-uncased", framework="pt", device=-1)
-
+classifier = pipeline("text-classification", model="prajjwal1/bert-tiny")
+summarizer = pipeline("summarization", model="t5-small")
+ner_tagger = pipeline("ner", model="dslim/bert-base-NER", aggregation_strategy="simple")
+reader = pipeline("question-answering", model="mrm8488/bert-tiny-5-finetuned-squadv2")
+generator = pipeline('text-generation', model='distilgpt2')
+unmasker = pipeline("fill-mask", model="distilbert-base-uncased", framework="pt")
 
 # In[3]:
 
@@ -103,4 +101,3 @@ def unmask(text):
     for pred in predictions:
         formatted.append(f"{pred['token_str']} (score: {pred['score']:.4f})")
     return formatted
-

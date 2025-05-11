@@ -1,6 +1,6 @@
 # 🧠 LLM MultiNLP
 
-A multi-functional NLP application built with Streamlit and Hugging Face Transformers, offering real-time interaction with various large language model (LLM) tasks.([GitHub][1])
+A multi-functional NLP application built with Streamlit and Hugging Face Transformers, offering real-time interaction with various large language model (LLM) tasks.
 You can access the Streamlit
 👉 [Launch the Streamlit App](https://llm-multinlp.streamlit.app/)
 

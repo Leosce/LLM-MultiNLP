@@ -9,8 +9,8 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration, pipeline
 import nltk
 
 
-nltk.download('punkt')
-nltk.download('punkt_tab')
+# nltk.download('punkt')
+# nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize
 tokenizer = T5Tokenizer.from_pretrained("t5-small")
 model = T5ForConditionalGeneration.from_pretrained("t5-small")

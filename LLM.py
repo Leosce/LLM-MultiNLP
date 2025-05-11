@@ -7,9 +7,8 @@
 import transformers
 from transformers import T5Tokenizer, T5ForConditionalGeneration, pipeline
 import nltk
-import torch
 
-device = torch.device("cpu")
+
 nltk.download('punkt')
 nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize

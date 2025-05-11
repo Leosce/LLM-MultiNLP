@@ -22,7 +22,7 @@ if option =='Q&A':
 
 language=''
 if option == "Translate":
-    language = st.text_input("Enter target language (e.g., French, German):")
+    language = st.text_input("Enter target language (e.g., French, Deutsch):")
 
 if st.button("Run"):
 

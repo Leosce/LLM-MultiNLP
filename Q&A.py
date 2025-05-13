@@ -14,14 +14,16 @@ user_input = st.text_input("Enter your text here: ")
 question=''
 if option =='Q&A':
     question = st.text_input("Please enter what you're looking for in the text: ")
-            
-if option == 'Q&A':
     
-    output = read(user_input, question)
+if st.button("Run"):            
     
-    st.write("")
-    
-    st.write('##### {}'.format('Answer for the provided lookup and text: ',))
-    
-    st.write(output)
+    if option == 'Q&A':
+        
+        output = read(user_input, question)
+        
+        st.write("")
+        
+        st.write('##### {}'.format('Answer for the provided lookup and text: ',))
+        
+        st.write(output)
 
